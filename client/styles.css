@@ -1,0 +1,148 @@
+body {
+  margin: auto;
+  font-family: "Orbitron", sans-serif;
+  font-size: 14px;
+}
+.rainbow-text {
+  text-align: center;
+  font-weight: large;
+  background-image: linear-gradient(
+    to left,
+    #150578,
+    #006E90,
+    #1cd3d3,
+    #F87666
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+.card {
+  position: relative;
+  margin: 30px auto;
+  padding: 25px 15px;
+  text-align: center;
+  font-size: medium;
+  background: rgba(1, 1, 1, 0);
+  width: 300px;
+  height: 260px;
+  position: relative;
+  display: inline-block;
+  border-radius: 40px;
+  webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.123);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.123);
+  webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.card:hover {
+  border-width: 10px; 
+  border-left-color: #1cd3d3;
+  border-top-color: #006E90;
+  border-bottom-color: #150578;
+  border-right-color: #F87666;
+  background-color: white;
+}
+
+/**UJ.html*/
+.uj_esemeny {
+  width: 400px;
+  height: 600px;
+  position: relative;
+  margin: 20px auto;
+  border-radius: 20px;
+  border: 5px solid;
+  border-left-color: #1cd3d3;
+  border-top-color: #006E90;
+  border-bottom-color: #150578;
+  border-right-color: #F87666;
+  padding: 25px 15px;
+  background-color: white;
+  text-align: left;
+  font-size: large;
+}
+img {
+  margin-left: auto;
+  margin-right:auto;
+  display: block;
+}
+
+.form-control {
+  border-width: 5px;
+  border-left-color: #1cd3d3;
+  border-top-color: #1cd3d3;
+  border-bottom-color: #F87666;
+  border-right-color: #F87666;
+  border-radius: 10px;
+}
+#rendNev {
+  font-size: 1.5rem;
+}
+#navbar {
+  position: relative;
+  background-color: white;
+}
+
+/**BUTTONS*/
+.ok_button {
+  margin: 20px;
+  border: 0;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #F87666;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  width: auto;
+  margin: 5px;
+}
+.button,
+.hozzaad,
+.dropdown-item {
+  margin: 20px;
+  border: 0;
+  border-radius: 10%;
+  display: inline-block;
+  background-color: white;
+  color: #1cd3d3;
+  text-align: center;
+  padding: 10px;
+  width: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button:hover,
+.hozzaad:hover {
+  background-color: #ffffff;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+  font-size: 1.2rem;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
