@@ -12,10 +12,10 @@ function kezdolap(){
                 id=f.id;
                 lista.innerHTML +=
                 "<div class='card' id='"+id+"'>"+
-                "<p>"+f.rend_nev+"</p>"+
-                "<p>&#9201;"+ f.idopont+"</p>"+
-                "<p>&#127913;"+ f.eloado_nev+"</p>"+
-                "<p>&#128205"+f.helyszin_nev+"</p>"+
+                "<p><strong>" + f.rend_nev+"</strong></p>"+
+                "<p>&#9201; " + f.idopont+"</p>"+
+                "<p>&#127913; " + f.eloado_nev+"</p>"+
+                "<p>&#128205 " + f.helyszin_nev+"</p>"+
                 "<button type='button' class='button' id='button"+id+"' onClick='bovebben("+id+")' style='vertical-align:middle;'><span><strong>Bővebben</strong></span></button>"+
                 "</div>"+
                 "</div>";

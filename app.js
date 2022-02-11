@@ -14,7 +14,7 @@ const pool = mysql.createPool({
 
 app.route("/kezdolap")
     .get(function(req,res){
-        const q="SELECT r.rend_id AS id, r.rend_nev AS 'rend_nev', date_format(r.idopont, '%Y %M %d') AS 'idopont', h.helyszin_nev AS 'helyszin_nev', e.eloado_nev AS 'eloado_nev'"
+        const q="SELECT r.rend_id AS id, r.rend_nev AS 'rend_nev', date_format(r.idopont, '%Y - %M - %d') AS 'idopont', h.helyszin_nev AS 'helyszin_nev', e.eloado_nev AS 'eloado_nev'"
         +" FROM helyszin AS h INNER JOIN"
              +" rendezveny AS r"
              +" ON h.helyszin_id = r.helyszin_id INNER JOIN"
